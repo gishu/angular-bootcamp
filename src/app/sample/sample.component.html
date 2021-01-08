@@ -1,3 +1,10 @@
 <h3>Sample Component</h3>
 
-<div class="highlight">External Template and Styles</div>
+<div class="highlight">Data Binding</div>
+
+<ol>
+    <li>String Interpolation: {{myField}}</li>
+    <li><input [disabled]="enabled" type="text"  value ="Property binding - Disabled attribute"></li>
+    <li><button (click)="toggleEnabledFlag()">Event binding - Enable/Disable</button></li>
+    <li><input type="text" [(ngModel)]="myField"></li>
+</ol>
