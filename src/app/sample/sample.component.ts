@@ -2,13 +2,8 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'mx-sample',
-  template: `
-    <p>
-      Sample Component works!
-    </p>
-  `,
-  styles: [
-  ]
+  templateUrl: './sample.component.html',
+  styleUrls: [ './sample.component.css']
 })
 export class SampleComponent implements OnInit {
 
