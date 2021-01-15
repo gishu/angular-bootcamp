@@ -1,7 +1,8 @@
 - [Angular 8 Bootcamp](#angular-8-bootcamp)
   - [Bootstrap](#bootstrap)
   - [Components](#components)
-
+    - [4. Intercomponent communication](#4-intercomponent-communication)
+  - [3 Data binding](#3-data-binding)
 # Angular 8 Bootcamp
 
 ## Bootstrap
@@ -27,3 +28,20 @@ ng g[enerate] c[component] folder/Name
 ```
 This will create the 3 parts of a component, the HTML template, the styles file and the typescript code.
 This will also update the declarations array of the Module.
+
+### 4. Intercomponent communication
+Parent child communication
+- Mark properties with Input() to pass in values
+- Mark events with Output to emit values
+
+Sibling component communication
+- Bubble up to the parent
+- Invoke child components via template variables / @ViewChild
+
+
+
+
+## 3 Data binding
+- String interpolation
+- Property and Event binding
+- 2-way ngModel databinding
