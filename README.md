@@ -49,3 +49,6 @@ Sibling component communication
 ## 4 Services
 - Any class can serve as a service.
 - Set providers array for angular to inject the service.
+- Hierarchical Injector: setting providers at
+  - AppModule level -> Singleton instance
+  - Component level -> shared by component and its children

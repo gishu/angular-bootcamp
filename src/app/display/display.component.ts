@@ -4,8 +4,7 @@ import { LoggingService } from '../logging.service';
 @Component({
   selector: 'mx-display',
   templateUrl: "./display.component.html",
-  styles: [],
-  providers:[LoggingService]
+  styles: []
 })
 export class DisplayComponent {
 

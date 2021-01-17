@@ -7,6 +7,7 @@ import { SampleComponent } from './sample/sample.component';
 import { FormsModule } from '@angular/forms';
 import { CounterComponent } from './counter/counter.component';
 import { DisplayComponent } from './display/display.component';
+import { LoggingService } from './logging.service';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,7 @@ import { DisplayComponent } from './display/display.component';
     AppRoutingModule,
     FormsModule
   ],
-  providers: [],
+  providers: [LoggingService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

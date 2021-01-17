@@ -4,8 +4,7 @@ import { LoggingService } from '../logging.service';
 @Component({
   selector: 'mx-counter',
   templateUrl: './counter.component.html',
-  styles: [],
-  providers:[LoggingService]
+  styles: []
 })
 export class CounterComponent implements OnInit {
 
