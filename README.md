@@ -45,3 +45,7 @@ Sibling component communication
 - String interpolation
 - Property and Event binding
 - 2-way ngModel databinding
+
+## 4 Services
+- Any class can serve as a service.
+- Set providers array for angular to inject the service.

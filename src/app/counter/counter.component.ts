@@ -1,10 +1,11 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { LoggingService } from '../logging.service';
 
 @Component({
   selector: 'mx-counter',
   templateUrl: './counter.component.html',
-  styles: [
-  ]
+  styles: [],
+  providers:[LoggingService]
 })
 export class CounterComponent implements OnInit {
 
@@ -16,13 +17,14 @@ export class CounterComponent implements OnInit {
   @Output("CountChanged")
   private countEmitter = new EventEmitter<{ count: number }>();
 
-  constructor() { }
+  constructor(private logService : LoggingService) { }
 
   ngOnInit(): void {
     this.counter = this.initialValue;
   }
 
   increment(){
+    this.logService.log("Counter increments!")
     this.countEmitter.emit({count: ++this.counter})
   }
 
