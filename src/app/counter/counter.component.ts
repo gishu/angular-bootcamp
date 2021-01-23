@@ -1,4 +1,5 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { DataService } from '../data.service';
 import { LoggingService } from '../logging.service';
 
 @Component({
@@ -11,20 +12,23 @@ export class CounterComponent implements OnInit {
   @Input("StartValue")
   initialValue: number = 0;
 
-  counter : number = 0;
+  counter: number = 0;
 
   @Output("CountChanged")
   private countEmitter = new EventEmitter<{ count: number }>();
 
-  constructor(private logService : LoggingService) { }
+  constructor(private logService: LoggingService, private dataService: DataService) { }
 
   ngOnInit(): void {
     this.counter = this.initialValue;
   }
 
-  increment(){
+  increment() {
     this.logService.log("Counter increments!")
-    this.countEmitter.emit({count: ++this.counter})
+    //this.countEmitter.emit({count: ++this.counter})
+
+    //talking via a service
+    this.dataService.setCounter(++this.counter);
   }
 
 }
