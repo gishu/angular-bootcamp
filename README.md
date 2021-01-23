@@ -37,7 +37,7 @@ Parent child communication
 Sibling component communication
 - Bubble up to the parent
 - Invoke child components via template variables / @ViewChild
-
+- componentA invoke service.method1 -> componentB subscribes to service.Subject<X>.asObservable()
 
 
 
@@ -46,7 +46,7 @@ Sibling component communication
 - Property and Event binding
 - 2-way ngModel databinding
 
-## 4 Services
+## 5 Services
 - Any class can serve as a service.
 - Set providers array for angular to inject the service.
 - Hierarchical Injector: setting providers at
