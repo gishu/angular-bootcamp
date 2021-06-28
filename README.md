@@ -18,3 +18,4 @@ How it boots up:
   * main.ts has the code to bootstrap the main Module - AppModule
     * AppModule specifies the bootstrap Component = AppComponent
       * The <app-root> selector in index.html is replaced with the template of the AppComponent
+  * styles.css is included in ; contains application wide styles 
