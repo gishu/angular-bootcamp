@@ -1,3 +1,15 @@
 <div class="container">
-  <p>The app component content goes here.</p>
-</div>
+  <div class="row">
+    <div class="col-sm">
+
+      <!-- Using TemplateVariables 
+      <mx-counter [StartValue]="x10" (CountChanged)="childComp.setValue($event.count)"></mx-counter>
+      -->
+
+      <mx-counter [StartValue]="x10" (CountChanged)="onCountChanged($event)"></mx-counter>
+    </div>
+    <div class="col-sm">
+      <mx-display #childComp></mx-display>
+    </div>
+  </div>
+</div> 
