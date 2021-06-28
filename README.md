@@ -34,3 +34,13 @@ Checkout this branch
 - event binding
 - property binding
 - data binding
+
+## 03-Inter component communication
+Parent child communication
+- Mark properties with Input() to pass in values
+- Mark events with Output to emit values
+
+Sibling component communication
+- Bubble up to the parent
+- Invoke child components via template variables / @ViewChild
+
