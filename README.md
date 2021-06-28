@@ -9,5 +9,12 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 # Bootcamp begins
 
 ## Create the project
-`ng new [projectName] --directory [dir] [--dry-run]`
+`ng new [projectName] --directory [dir] [--dry-run] [--minimal]`
 
+
+How it boots up:
+
+* index.html pulls in main.js
+  * main.ts has the code to bootstrap the main Module - AppModule
+    * AppModule specifies the bootstrap Component = AppComponent
+      * The <app-root> selector in index.html is replaced with the template of the AppComponent
