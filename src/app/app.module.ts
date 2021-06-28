@@ -3,11 +3,13 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { HandMadeComponent } from './handmade/handmade.component';
+import { CliComponent } from './cli/cli.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HandMadeComponent
+    HandMadeComponent,
+    CliComponent
   ],
   imports: [
     BrowserModule
