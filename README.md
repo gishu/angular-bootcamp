@@ -18,3 +18,8 @@ How it boots up:
   * main.ts has the code to bootstrap the main Module - AppModule
     * AppModule specifies the bootstrap Component = AppComponent
       * The <app-root> selector in index.html is replaced with the template of the AppComponent
+
+# Components
+- Markup an exported class with Component decorator. This has 3 attributes - the HTML template, the selector/tag, the styles. 
+- template and styles can be inline or seperate files.
+- Update the module's declarations attribute to include the new component class.
