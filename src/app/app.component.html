@@ -11,7 +11,11 @@
 
   <ng-template #disabledTemplate>
     <div [ngClass]="getClasses()">
-        <p>Sorry! Textbox is not open for business!</p>
+      <p>Sorry! Textbox is not open for business!</p>
     </div>
   </ng-template>
+
+  <div *ngFor="let value of toggles; index as i">
+    <p [ngStyle]="{'background-color': getStripe(i)}">#{{ i }}: Value of flag was {{ value }}</p>
+  </div>
 </div>

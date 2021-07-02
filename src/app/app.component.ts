@@ -8,8 +8,10 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'ng-bootcamp';
   enableText = true;
+  toggles: string[] = [];
 
   toggleFlag() {
+    this.toggles.push(String(this.enableText));
     this.enableText = !this.enableText;
   }
 
@@ -17,14 +19,19 @@ export class AppComponent {
     return {
       'font-style': 'italic',
       'font-size.em': 2,
-      'background-color': (this.enableText? 'beige' : 'salmon'),
+      'background-color': this.enableText ? 'beige' : 'salmon',
     };
   }
 
-  getClasses(){
+  getClasses() {
     return {
-      'info' : this.enableText,
-      'warning': !this.enableText
-    }
+      info: this.enableText,
+      warning: !this.enableText,
+    };
+  }
+
+  getStripe(i: number) {
+    console.log("getstripe" + i);
+    return (i % 2 === 0 ? 'transparent': 'lightgray');
   }
 }
