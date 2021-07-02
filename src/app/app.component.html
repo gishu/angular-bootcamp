@@ -5,13 +5,13 @@
   <button (click)="toggleFlag()">
     {{ enableText ? "Disable" : "Enable" }}
   </button>
-  <div *ngIf="enableText; else disabledTemplate">
-    <p [ngStyle]="getBGColor()">Go on change the text...</p>
+  <div *ngIf="enableText; else disabledTemplate" [ngClass]="getClasses()">
+    <p>Go on change the text...</p>
   </div>
 
   <ng-template #disabledTemplate>
-    <div>
-        <p [ngStyle]="getBGColor()">Sorry! Textbox is not open for business!</p>
+    <div [ngClass]="getClasses()">
+        <p>Sorry! Textbox is not open for business!</p>
     </div>
   </ng-template>
 </div>

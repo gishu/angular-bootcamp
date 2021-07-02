@@ -20,4 +20,11 @@ export class AppComponent {
       'background-color': (this.enableText? 'beige' : 'salmon'),
     };
   }
+
+  getClasses(){
+    return {
+      'info' : this.enableText,
+      'warning': !this.enableText
+    }
+  }
 }
