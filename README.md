@@ -1,9 +1,12 @@
-- [Angular 8 Bootcamp](#NgBootcamp)
+- [Angular Bootcamp](#angular-bootcamp)
+  - [Development server](#development-server)
   - [Bootstrap](#bootstrap)
-  - [Components](#components)
+  - [01-Components](#01-components)
+  - [02-Databinding](#02-databinding)
+  - [03-Inter component communication](#03-inter-component-communication)
 
 
-# NgBootcamp
+# Angular Bootcamp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.4.
 
@@ -13,7 +16,8 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 ## Bootstrap
 
-## Create the project
+ Create the project with
+
 `ng new [projectName] --directory [dir] [--dry-run] [--minimal]`
 
 
