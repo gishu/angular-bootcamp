@@ -4,6 +4,7 @@
   - [01-Components](#01-components)
   - [02-Databinding](#02-databinding)
   - [03-Inter component communication](#03-inter-component-communication)
+  - [04-Directives](#04-directives)
 
 
 # Angular Bootcamp
@@ -47,4 +48,9 @@ Parent child communication
 Sibling component communication
 - Bubble up to the parent
 - Invoke child components via template variables / @ViewChild
+
+## 04-Directives
+Structural directives start with a * => change the DOM structure 
+- *ngIf for conditional inclusion. *ngFor to repeat a template n times
+- ngStyles to apply styles to element dynamically, ngClass to apply classes dynamically
 
