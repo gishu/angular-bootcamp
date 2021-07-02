@@ -1,3 +1,16 @@
 <div class="container">
   <p>The app component content goes here.</p>
+
+  <input type="text" value="Sample text box" [disabled]="!enableText">
+  <button (click)="toggleFlag()">{{ enableText ? "Disable" : "Enable"}}</button>
+  <div *ngIf="enableText; else disabledTemplate">
+    <p>Go on change the text...</p>
+  </div>
+
+  <ng-template #disabledTemplate>
+    <div>
+      <p>Sorry! Textbox is not open for business!</p>
+    </div>
+  </ng-template>
+
 </div>

@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ng-bootcamp';
+  enableText = true;
+  
+  toggleFlag(){
+    this.enableText = !this.enableText;
+  }
 }
