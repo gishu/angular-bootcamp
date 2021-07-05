@@ -65,4 +65,6 @@ Sibling component communication
 Structural directives start with a * => change the DOM structure 
 - *ngIf for conditional inclusion. *ngFor to repeat a template n times
 - ngStyles to apply styles to element dynamically, ngClass to apply classes dynamically
-
+- create a custom directive
+  - bind to host element's properties and events
+  - customize with @Input properties
