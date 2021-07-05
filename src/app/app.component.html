@@ -1,7 +1,7 @@
 <div class="container">
   <p>The app component content goes here.</p>
 
-  <input appBetterHighlight type="text" value="Sample text box" [disabled]="!enableText" />
+  <input appBetterHighlight [highlightColor]="'lavender'" type="text" value="Sample text box" [disabled]="!enableText" />
   <button (click)="toggleFlag()">
     {{ enableText ? "Disable" : "Enable" }}
   </button>
