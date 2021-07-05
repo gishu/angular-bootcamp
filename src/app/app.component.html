@@ -1,12 +1,12 @@
 <div class="container">
   <p>The app component content goes here.</p>
 
-  <input type="text" value="Sample text box" [disabled]="!enableText" />
+  <input appBetterHighlight type="text" value="Sample text box" [disabled]="!enableText" />
   <button (click)="toggleFlag()">
     {{ enableText ? "Disable" : "Enable" }}
   </button>
   <div *ngIf="enableText; else disabledTemplate" [ngClass]="getClasses()">
-    <p appBetterHighlight>Go on change the text...</p>
+    <p appHighlight>Go on change the text...</p>
   </div>
 
   <ng-template #disabledTemplate>
