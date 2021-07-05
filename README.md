@@ -25,3 +25,8 @@ How it boots up:
 - Update the module's declarations attribute to include the new component class.
 
 `ng g[enerate] c[component] <name>`
+
+## View Encapsulation
+By default, Components have ViewEncapsulation.Emulated. This applies a unique attribute to each component. e.g. _ngcontent-wpo-c12 and any styles are modified to include this attribute e.g. `p[_ngcontent-wpo-c12]` so the styles only apply within this component.
+
+If you apply ViewEncapsulation.None to a component, then the styles will leak to other components as well. Usually not desirable.
