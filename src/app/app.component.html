@@ -6,7 +6,7 @@
     {{ enableText ? "Disable" : "Enable" }}
   </button>
   <div *ngIf="enableText; else disabledTemplate" [ngClass]="getClasses()">
-    <p appHighlight>Go on change the text...</p>
+    <p appBetterHighlight>Go on change the text...</p>
   </div>
 
   <ng-template #disabledTemplate>
