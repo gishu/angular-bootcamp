@@ -30,3 +30,6 @@ How it boots up:
 By default, Components have ViewEncapsulation.Emulated. This applies a unique attribute to each component. e.g. _ngcontent-wpo-c12 and any styles are modified to include this attribute e.g. `p[_ngcontent-wpo-c12]` so the styles only apply within this component.
 
 If you apply ViewEncapsulation.None to a component, then the styles will leak to other components as well. Usually not desirable.
+
+## Content projection
+you can project content into a custom component with the ng-content directive
