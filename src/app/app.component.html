@@ -6,6 +6,9 @@
 <hr/>
 <!-- <mx-cli></mx-cli> -->
 <!-- <div mx-cli></div> -->
-<div class="mx-cli">
-  <button (click)="alertCustomContent()"> Content defined by parent component </button>
+<button (click)="addItem()">Add</button>
+<button (click)="removeItem()">Remove</button>
+
+<div *ngFor="let item of items" class="mx-cli" [MyInput]="appProp">
+  <button (click)="alertCustomContent()"> Change Value </button>
 </div>
