@@ -31,8 +31,20 @@ How it boots up:
   * styles.css is included in ; contains application wide styles 
 
 ## 01-Components
-Checkout this branch 
+ 
 - create components by hand or via cli
+
+- _View Encapsulation_
+
+By default, Components have ViewEncapsulation.Emulated. This applies a unique attribute to each component. e.g. _ngcontent-wpo-c12 and any styles are modified to include this attribute e.g. `p[_ngcontent-wpo-c12]` so the styles only apply within this component.
+
+If you apply ViewEncapsulation.None to a component, then the styles will leak to other components as well. Usually not desirable.
+
+- _Content projection_
+
+you can project content into a custom component with the ng-content directive
+
+- _Lifecycle hooks_
 
 ## 02-Databinding
 - string interpolation
