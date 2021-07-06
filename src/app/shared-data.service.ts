@@ -1,13 +1,15 @@
+import { Injectable } from "@angular/core";
+import { LoggingService } from "./logging.service";
 
+@Injectable()
 export class SharedDataService {
-  private _owner: string = 'undefined';
 
-  constructor() { }
+  constructor(private logger : LoggingService) { }
 
   setOwner(owner: string){
-    this._owner = owner;
+    this.logger.setOwner(owner) ;
   }
   log(message : string){
-    console.log(this._owner + " says : " + message);
+    this.logger.log(message);
   }
 }
