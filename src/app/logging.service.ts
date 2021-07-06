@@ -8,6 +8,6 @@ export class LoggingService {
   }
 
   log(message : string){
-    console.log( this._owner + message);
+    console.log( this._owner + '=> ' + message);
   }
 }

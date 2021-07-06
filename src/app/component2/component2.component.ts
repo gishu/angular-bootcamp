@@ -13,7 +13,7 @@ export class Component2Component implements OnInit {
   constructor(private logService : LoggingService) { }
 
   ngOnInit(): void {
-    this.logService.setOwner("Comp1");
+    this.logService.setOwner("Comp2");
   }
 
   logMessage(msg : string){
