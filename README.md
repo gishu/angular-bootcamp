@@ -79,3 +79,5 @@ _Instantiation_
 - component without children level : instance exclusively owned by this component only
 
 @Injectable decorator only needed for services that need DI 
+
+Services also offer another way to setup intercomponent communication via a shared service instance
