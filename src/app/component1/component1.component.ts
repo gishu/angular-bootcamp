@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { LoggingService } from '../logging.service';
+import { SharedDataService } from '../shared-data.service';
 
 @Component({
   selector: 'app-component1',
@@ -9,7 +10,7 @@ import { LoggingService } from '../logging.service';
 })
 export class Component1Component implements OnInit {
 
-  constructor(private logService : LoggingService) { }
+  constructor(private logService : LoggingService, private dataService : SharedDataService) { }
 
   ngOnInit(): void {
     this.logService.setOwner("Comp1");
@@ -17,5 +18,6 @@ export class Component1Component implements OnInit {
 
   logMessage(msg : string){
     this.logService.log(msg);
+    this.dataService.log(msg);
   }
 }
