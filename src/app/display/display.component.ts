@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Subscription } from 'rxjs';
+import { NotificationService } from '../notification.service';
 
 @Component({
   selector: 'mx-display',
@@ -7,12 +9,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DisplayComponent implements OnInit {
   value: number = 0;
+  subscription: Subscription | any;
 
-  constructor() {}
+  constructor(private notifier: NotificationService) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.subscription = this.notifier.countNotifications$.subscribe( newCount => {
+      console.log("Notified <<< " + newCount);
+      this.value = newCount;
+    });
+  }
 
-  setValue(count: number) {
-    this.value = count;
+  ngOnDestroy(){
+    this.subscription.unsubscribe();
   }
 }

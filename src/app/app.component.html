@@ -1,13 +1,10 @@
 <div class="container">
   <div class="row">
     <div class="col-sm">
-
-      <!-- Using TemplateVariables -->
-      <mx-counter [StartValue]="x10" (CountChanged)="setDisplay(childComp, $event)"></mx-counter>
-      
+      <mx-counter [StartValue]="x10"></mx-counter>
     </div>
     <div class="col-sm">
-      <mx-display #childComp></mx-display>
+      <mx-display></mx-display>
     </div>
   </div>
-</div> 
+</div>
